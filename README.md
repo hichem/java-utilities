@@ -1,1 +1,1 @@
-# ssl-client-server-java
+# Java SSL Client and Server

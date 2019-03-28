@@ -1,0 +1,13 @@
+[Unit]
+Description=SSL Server
+
+[Service]
+Type=simple
+PIDFile=/var/run/sslserver/sslserver.pid
+ExecStart=/usr/local/sslserver/startTM.sh
+ExecStop=/usr/local/sslserver/stopTM.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
