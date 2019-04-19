@@ -13,7 +13,7 @@ Generated keys are stored in GPG keyrings (key stores). You can view them using 
 $ gpg2 --list-keys
  
 pub   4096R/C1BB808C 2018-01-17 [expires: 2020-01-17]
-uid                  TEST_KEY_6 <TEST_KEY_6@ingenico.com>
+uid                  TEST_KEY_6 <TEST_KEY_6@example.com>
 sub   4096R/0508F102 2018-01-17 [expires: 2020-01-17]
 ~~~
 
@@ -121,11 +121,11 @@ Use GnuPG with --decrypt option as below:
 $ gpg2 --output test_decrypted.txt --decrypt test.txt.gpg
  
 You need a passphrase to unlock the secret key for
-user: "TEST_KEY_6 <TEST_KEY_6@ingenico.com>"
+user: "TEST_KEY_6 <TEST_KEY_6@example.com>"
 4096-bit RSA key, ID 0508F102, created 2018-01-17 (main key ID C1BB808C)
  
 gpg: encrypted with 4096-bit RSA key, ID 0508F102, created 2018-01-17
-      "TEST_KEY_6 <TEST_KEY_6@ingenico.com>"
+      "TEST_KEY_6 <TEST_KEY_6@example.com>"
 ~~~
 ~~~ 
 $ more test_decrypted.txt 
